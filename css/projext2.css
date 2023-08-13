@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header start */
+#navigation{
+    
+    background: linear-gradient(dodgerblue, rgb(3, 69, 135));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0 3px black;
+}
+#navigation > ul{
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+#navigation > ul > li{
+    padding: 15px 0;
+    margin: 0 5px;
+    margin-left: -5px;
+}
+#navigation > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    border-right: 1px solid white;
+    padding: 16px 20px;
+    transition-duration: 0.5s;
+}
+#navigation > ul > li:first-child > a{
+    border-left: 1px solid white;
+}
+#navigation > ul > li:hover > a{
+    background-color: rgb(3, 87, 172);
+}
+#logo > h2{
+    margin-left: 50px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* dropdownmenu start */
+
+.dropdownmenu{
+    opacity: 0;
+    visibility: hidden;
+    background-color: dodgerblue;
+    margin-top: 15px;
+    position: absolute;
+    width: 187px;
+    list-style-type: none;
+    text-align: center;
+    transition-duration: 0.5s; 
+    transform: scaley(0); 
+    transform-origin: top;
+    box-shadow: 3px 3px 6px black;
+}
+.dropdownmenu > li{
+    padding: 8px 0;
+    border-bottom: 1px solid white;
+}
+.dropdownmenu >li:first-child{
+    border-top: 1px solid white;
+}
+.dropdownmenu > li:hover{
+    background-color: rgb(3, 87, 172);
+}
+.dropdownmenu > li > a{
+    text-decoration: none;
+    color: white;
+}
+#navigation > ul > li:hover > .dropdownmenu{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}
+
+/* dropdownmenu end */
+
+
+/* hero contain start */
+.main-hero{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.089), rgba(0, 0, 0, 0.464)), url(../img/web\ header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-contain{
+    padding-top: 100px;
+}
+.hero-contain > h1{
+    background-color: rgba(7, 65, 123, 0.6);
+    width: 500px;
+    margin: 20px auto;
+    font-size: 50px;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+.hero-contain > button{
+    font-size: 22px;
+    padding: 15px 25px;
+    margin-top: 20px;
+    background-color: rgba(11, 77, 143, 0.744);
+    color: white;
+    cursor: pointer;
+    border-radius: 30px 10px 30px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.874);
+    border: 3px solid green;
+    transition-duration: 0.5s;
+}
+.hero-contain > button:hover{
+    background-color: rgba(0, 0, 0, 0.204);
+    color: white;
+}
+.hero-contain > h4{
+    font-size: 25px;
+    color: rgb(53, 48, 48);
+}
+.hero-contain > h5{
+    font-size: 25px;
+    color: rgb(46, 42, 42);
+    margin-bottom: 40px;
+}
+
+.img img{
+    width: 50px;
+    padding: 5px 10px;   
+}
+
+/* hero contain end */
+
+
+/* header end */
+
+
+/* main start */
+
+
+/* first-section */
+
+.first-section{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0px;
+    
+}
+.learn-programming{
+    
+    width: 300px;
+    text-align: center;
+    padding: 25px 0px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.learn-programming > h2 {
+    padding: 15px 0px;
+    font-size: 25px;
+}
+.learn-programming:hover{
+    box-shadow: 3px 3px 10px 1px black;
+}
+
+
+
+/* first-section */
+
+/* secound-section */
+
+.smart-area > h2{
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+}
+.smart-area > h2::after{
+    content: "";
+    width: 130px;
+    height: 5px;
+    background-color: brown;
+    position: absolute;
+    top: 52px;
+    left: 695px;
+}
+.smart-img{
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+.smart-text{
+    width: 500px;
+    padding-top: 10px;
+}
+.smart-text > h2{
+    margin: 20px 0;
+}
+.smart-text > h4{
+    color: brown;
+}
+.smart-text > a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+    border-radius: 7px;
+    transition-duration: 0.5s;
+    margin: 20px 0;
+    box-shadow: 2px 2px 2px black;
+}
+.smart-text > a:hover{
+    background-color: rgb(64, 14, 14);
+}
+.smart-text > p{
+    font-size: 20px;
+    
+    
+}
+
+/* secound section */
+
+/* third section */
+.third-section{
+    background-color: #FAFAFA;
+    padding: 30px 0;
+}
+.title{
+    text-align: center;
+    padding-top: 30px;
+}
+.title > h2{
+    font-size: 40px;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    grid-gap: 18px;
+}
+.box > div{
+    padding: 50px 15px;
+    text-align: center;
+    background-color: rgb(203, 211, 218);
+    transition-duration: 0.5s;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 5px;
+}
+.box > div:hover{
+    background-color: hsl(209, 48%, 69%);
+}
+.box > div > h2{
+    padding-bottom: 10px;
+}
+
+/* third section */
+
+/* fourth section */
+.fourth-section{
+    padding: 50px 0px;
+    background-color: whitesmoke;
+}
+.title2 > h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 50px 0px;
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+}
+.java{
+    width: 310px;
+}
+.java > img{
+    max-width: 100%;
+}
+.card1{
+    width: 310px;
+    text-align: center;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 3px;
+}
+.card1 > h3{
+    margin: 10px 0;
+    font-size: 25px;
+}
+.price{
+    margin: 15px 20px;
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    padding: 15px 0px;
+
+}
+.price > .dolar{
+    font-size: 25px;
+}
+.price > .per-month{
+    color: gray;
+}
+.card1 > button{
+    background-color: brown;
+    color: white;
+    padding: 10px 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    box-shadow: 1px 1px 3px black;
+}
+.card1 > button:hover{
+    background-color: white;
+    color: black;
+}
+.card1 > a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0px;
+}
+
+
+/* fourth section */
+/* five section */
+.section5{
+    padding-top: 20px;
+    padding-bottom: 150px;
+    background-color: bisque;
+}
+.five-section{
+    width: 1190px;
+    margin: auto;
+}
+.title4{
+    text-align: center;
+    padding: 35px 0px;
+}
+.title4 > h2{
+    font-size: 35px;
+}
+.title4 > h4{
+    margin-top: 10px;
+    letter-spacing: 3px;
+    color: gray;
+}
+.box5{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+}
+.main-testimonial{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px 15px;
+    
+    
+}
+.main-testimonial > .testimonial1{
+    width: 200px;
+    
+}
+.main-testimonial > .testimonial1 > img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 2px solid brown;
+}
+.testimonial1 > .testa2{
+    width: 130px;
+}
+.comment > div > .span1{
+    font-size: 25px;
+    margin-left: 15px;  
+}
+.comment > p{
+    margin-left: 15px;
+    white-space: pre-line;
+}
+.comment > div{
+    margin-bottom: 15px;
+}
+.star{
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* five section */
+/* six section */
+.section6{
+    background: url(../img/Blog/parallax.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 150px 0;
+}
+.mainbox6{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.box2nd{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+
+}
+.box2nd > h2{
+    margin-bottom:10px
+}
+
+/* six section */
+/* seven section */
+.section7{
+    padding-bottom: 53px;
+}
+.box7{
+    width: 1000px;
+    margin: auto;
+}
+.title7{
+    text-align: center;
+    padding: 30px 0;
+}
+.title7 > h2{
+    font-size: 30px;
+
+}
+.title7 > h4{
+    margin-top: 10px;
+    letter-spacing: 4px;
+    color: gray;
+}
+.img7{
+    width: 300px;
+    overflow: hidden;
+}
+.img7 > img{
+    max-width: 100%;
+    transition: 0.5s;
+    
+}
+.img7 > img:hover{
+    transform: scale(1.6);
+}
+.img7{
+    height: 200px;
+}
+.mainbox7{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px 2px;
+}
+.artical7{
+    text-align: center;
+}
+.artical7 > h3{
+    margin: 10px 0;
+}
+/* seven section */
+/* eight section */
+.section-eight{
+    padding-bottom: 30px;
+}
+.main8{
+    width: 1000px;
+    background-color: #EAECF0;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 2px 2px 5px black;
+}
+label{
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.input2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.input2 > div > input{
+    padding: 15px 10px;
+    width: 444px;
+    border: none;
+    font-size: 20px;
+   
+}
+.subject{
+    padding: 15px 10px;
+    width: 977px;
+    margin-bottom: 25px;
+    border: none;
+    font-size: 20px;
+}
+textarea{
+    margin-bottom: 25px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+}
+textarea::placeholder{
+    font-size: 20px;
+    
+}
+.send{
+    padding: 15px 25px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.send:hover{
+    background-color: rgb(89, 24, 24);
+    
+}
+form  input::placeholder{
+    font-size: 20px;
+}
+
+
+/* eight section */
+/* footer section */
+footer{
+    background-color: #023364;
+    margin-top: 100px;
+    padding-bottom: 50px;
+    color: gray;
+}
+.footer-section{
+    width: 1000px;
+    margin: auto;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.fsinglebox{
+    width: 250px;
+    margin-top: 50px;
+    padding: 10px 15px;
+
+}
+.fsinglebox > h3{
+    padding: 15px 0;
+    color: white;
+    font-size: 22px;
+}
+.fsinglebox > p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.a8{
+    text-decoration: none;
+    color: gray;
+}
+hr{
+    height: 1px;
+    background-color: white;
+    margin: 15px 0;
+}
+.footerbox1{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.footerbox1 > p{
+    padding: 15px 25px;
+}
+.img8{
+    width: 30px;
+}
+
+.Copyright{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+
+
+/* footer section */
+/* main end */
